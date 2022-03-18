@@ -1,0 +1,43 @@
+@media (min-width: 576px) {
+	.info {
+		grid-template-areas:
+			'title box'
+			'title box'
+			'title box';
+		padding: 10em 2em;
+
+		&__box {
+			display: grid;
+			justify-content: end;
+		}
+
+		&__title {
+			padding: 0 1em;
+		}
+
+		&__box-img,
+		&__box-text {
+			max-width: 500px;
+		}
+
+		&__bg-icon {
+			position: absolute;
+			display: block;
+			opacity: 0.05;
+			z-index: -5;
+
+			&--one {
+				top: 14%;
+				width: 20%;
+				left: 2%;
+				animation: rotate-right 160s infinite linear;
+			}
+			&--two {
+				bottom: 10%;
+				width: 30%;
+				left: 10%;
+				animation: rotate-left 140s infinite linear;
+			}
+		}
+	}
+}
