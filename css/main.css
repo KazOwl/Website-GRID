@@ -422,6 +422,80 @@ h1.company-name {
   color: #9b9165;
 }
 
+.plans {
+  padding: 6em 2em;
+  background-color: #191919;
+}
+
+.plans__box {
+  margin: 1em 0;
+  padding: 2em 1em;
+  background-color: #232323;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  -webkit-transition: border 0.3s, background-color 0.3s;
+  transition: border 0.3s, background-color 0.3s;
+}
+
+.plans__box:hover {
+  background-color: #191919;
+  border: 1px solid #d6c78e;
+}
+
+.plans__item {
+  margin: 1em 0;
+}
+
+.plans__item-icon {
+  width: 50px;
+}
+
+.plans__item-name {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.8rem;
+  color: #d6c78e;
+}
+
+.newsletter {
+  padding: 9em 2em;
+  background-color: #a01c35;
+  text-align: center;
+}
+
+.newsletter__text {
+  padding: 1em;
+  margin-bottom: 1em;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.newsletter__form-input {
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+.newsletter__form-btn {
+  background: none;
+  padding: 1em;
+  color: #d6c78e;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #d6c78e;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.newsletter__form-btn:hover {
+  color: #a01c35;
+  background-color: #d6c78e;
+}
+
 @media (min-width: 576px) {
   .info {
         grid-template-areas: 'title box' 'title box' 'title box';
@@ -460,6 +534,20 @@ h1.company-name {
     -webkit-animation: rotate-left 140s infinite linear;
             animation: rotate-left 140s infinite linear;
   }
+  .info__bg-icon--three {
+    top: 26%;
+    width: 50%;
+    left: 16%;
+    -webkit-animation: rotate-left 160s infinite linear;
+            animation: rotate-left 160s infinite linear;
+  }
+  .info__bg-icon--four {
+    top: 55%;
+    width: 15%;
+    left: -5%;
+    -webkit-animation: rotate-right 140s infinite linear;
+            animation: rotate-right 140s infinite linear;
+  }
 }
 
 @media (min-width: 768px) {
@@ -491,6 +579,51 @@ h1.company-name {
     -ms-grid-column: 7;
     -ms-grid-column-span: 3;
     grid-column: 7/10;
+  }
+  .plans {
+    padding: 8em 2em;
+  }
+  .plans__box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .plans__item {
+    margin: 0 1em;
+  }
+  .plans__item-name {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .newsletter__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsletter__text {
+    margin-bottom: 0;
+  }
+  .newsletter__form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+    gap: 20px;
+  }
+  .newsletter__form-input {
+    margin-bottom: 0;
   }
 }
 

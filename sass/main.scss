@@ -305,6 +305,77 @@ h1.company-name {
 	}
 }
 
+.plans {
+	padding: 6em 2em;
+	background-color: $darker;
+
+	&__box {
+		margin: 1em 0;
+		padding: 2em 1em;
+		background-color: $dark;
+		cursor: pointer;
+		text-align: center;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		transition: border 0.3s, background-color 0.3s;
+
+		&:hover {
+			background-color: $darker;
+			border: 1px solid $gold;
+		}
+	}
+
+	&__item {
+		margin: 1em 0;
+	}
+	&__item-icon {
+		width: 50px;
+	}
+	&__item-name {
+		margin-top: 0;
+		margin-bottom: 1.5em;
+		font-size: 1.8rem;
+		color: $gold;
+	}
+}
+
+//newsletter
+
+.newsletter {
+	padding: 9em 2em;
+	background-color: $red;
+	text-align: center;
+
+	&__text {
+		padding: 1em;
+		margin-bottom: 1em;
+		font-size: 4rem;
+		font-weight: 200;
+	}
+
+	&__form-input {
+		margin-bottom: 1em;
+		padding: 1em;
+		width: 100%;
+		background-color: $white;
+		border: 1px solid transparent;
+	}
+
+	&__form-btn {
+		background: none;
+		padding: 1em;
+		color: $gold;
+		cursor: pointer;
+		font-weight: bold;
+		border: 1px solid $gold;
+		transition: background-color 0.3s, color 0.3s;
+
+		&:hover {
+			color: $red;
+			background-color: $gold;
+		}
+	}
+}
 @import './small';
 @import './medium';
 @import './large';

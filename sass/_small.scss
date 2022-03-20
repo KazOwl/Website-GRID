@@ -38,6 +38,18 @@
 				left: 10%;
 				animation: rotate-left 140s infinite linear;
 			}
+			&--three {
+				top: 26%;
+				width: 50%;
+				left: 16%;
+				animation: rotate-left 160s infinite linear;
+			}
+			&--four {
+				top: 55%;
+				width: 15%;
+				left: -5%;
+				animation: rotate-right 140s infinite linear;
+			}
 		}
 	}
 }
